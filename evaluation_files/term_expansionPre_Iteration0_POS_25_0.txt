@@ -1,0 +1,1031 @@
+web search
+ap
+linked data
+uri
+bm25
+lsi
+dublin core
+latent semantic
+odp
+directed acyclic
+oai
+asr
+ner
+naïve bayes
+open directory
+sla
+william
+j2ee
+dmoz
+offtopic
+tde
+softmax
+ibm db2
+chinese academy
+itr
+oaister
+nyt
+feng
+elsa
+swoogle
+kitti
+nar
+lehigh university
+amcheck
+acyclic graph
+sindice
+headline news
+rubbos
+allmusic
+online book
+mpd
+warrick
+times annotated
+djvu
+peterson
+labor statistics
+online archive
+tumor biology
+nakano
+craigslist
+duc2001
+ldoce
+swse
+xcrawl
+openlink
+york times
+tpc benchmark
+bigset
+spambase
+duc2002
+andrew ko
+asred
+lonelyplanet
+tobacco company
+justin weisz
+web search
+ap
+linked data
+uri
+bm25
+lsi
+dublin core
+latent semantic
+odp
+directed acyclic
+oai
+asr
+ner
+naïve bayes
+open directory
+sla
+william
+j2ee
+dmoz
+offtopic
+tde
+softmax
+ibm db2
+chinese academy
+itr
+oaister
+nyt
+feng
+elsa
+swoogle
+kitti
+nar
+lehigh university
+amcheck
+acyclic graph
+sindice
+headline news
+rubbos
+allmusic
+online book
+mpd
+warrick
+times annotated
+djvu
+peterson
+labor statistics
+online archive
+tumor biology
+nakano
+craigslist
+duc2001
+ldoce
+swse
+xcrawl
+openlink
+york times
+tpc benchmark
+bigset
+spambase
+duc2002
+andrew ko
+asred
+lonelyplanet
+tobacco company
+justin weisz
+web search
+ap
+linked data
+uri
+bm25
+lsi
+dublin core
+latent semantic
+odp
+directed acyclic
+oai
+asr
+ner
+naïve bayes
+open directory
+sla
+william
+j2ee
+dmoz
+offtopic
+tde
+softmax
+ibm db2
+chinese academy
+itr
+oaister
+nyt
+feng
+elsa
+swoogle
+kitti
+nar
+lehigh university
+amcheck
+acyclic graph
+sindice
+headline news
+rubbos
+allmusic
+online book
+mpd
+warrick
+times annotated
+djvu
+peterson
+labor statistics
+online archive
+tumor biology
+nakano
+craigslist
+duc2001
+ldoce
+swse
+xcrawl
+openlink
+york times
+tpc benchmark
+bigset
+spambase
+duc2002
+andrew ko
+asred
+lonelyplanet
+tobacco company
+justin weisz
+web search
+ap
+linked data
+uri
+bm25
+lsi
+dublin core
+latent semantic
+odp
+directed acyclic
+oai
+asr
+ner
+naïve bayes
+open directory
+sla
+william
+j2ee
+dmoz
+offtopic
+tde
+softmax
+ibm db2
+chinese academy
+itr
+oaister
+nyt
+feng
+elsa
+swoogle
+kitti
+nar
+lehigh university
+amcheck
+acyclic graph
+sindice
+headline news
+rubbos
+allmusic
+online book
+mpd
+warrick
+times annotated
+djvu
+peterson
+labor statistics
+online archive
+tumor biology
+nakano
+craigslist
+duc2001
+ldoce
+swse
+xcrawl
+openlink
+york times
+tpc benchmark
+bigset
+spambase
+duc2002
+andrew ko
+asred
+lonelyplanet
+tobacco company
+justin weisz
+web search
+ap
+linked data
+uri
+bm25
+lsi
+dublin core
+latent semantic
+odp
+directed acyclic
+oai
+asr
+ner
+naïve bayes
+open directory
+sla
+william
+j2ee
+dmoz
+offtopic
+tde
+softmax
+ibm db2
+chinese academy
+itr
+oaister
+nyt
+feng
+elsa
+swoogle
+kitti
+nar
+lehigh university
+amcheck
+acyclic graph
+sindice
+headline news
+rubbos
+allmusic
+online book
+mpd
+warrick
+times annotated
+djvu
+peterson
+labor statistics
+online archive
+tumor biology
+nakano
+craigslist
+duc2001
+ldoce
+swse
+xcrawl
+openlink
+york times
+tpc benchmark
+bigset
+spambase
+duc2002
+andrew ko
+asred
+lonelyplanet
+tobacco company
+justin weisz
+web search
+ap
+linked data
+uri
+bm25
+lsi
+dublin core
+latent semantic
+odp
+directed acyclic
+oai
+asr
+ner
+naïve bayes
+open directory
+sla
+william
+j2ee
+dmoz
+offtopic
+tde
+softmax
+ibm db2
+chinese academy
+itr
+oaister
+nyt
+feng
+elsa
+swoogle
+kitti
+nar
+lehigh university
+amcheck
+acyclic graph
+sindice
+headline news
+rubbos
+allmusic
+online book
+mpd
+warrick
+times annotated
+djvu
+peterson
+labor statistics
+online archive
+tumor biology
+nakano
+craigslist
+duc2001
+ldoce
+swse
+xcrawl
+openlink
+york times
+tpc benchmark
+bigset
+spambase
+duc2002
+andrew ko
+asred
+lonelyplanet
+tobacco company
+justin weisz
+web search
+ap
+linked data
+uri
+bm25
+lsi
+dublin core
+latent semantic
+odp
+directed acyclic
+oai
+asr
+ner
+naïve bayes
+open directory
+sla
+william
+j2ee
+dmoz
+offtopic
+tde
+softmax
+ibm db2
+chinese academy
+itr
+oaister
+nyt
+feng
+elsa
+swoogle
+kitti
+nar
+lehigh university
+amcheck
+acyclic graph
+sindice
+headline news
+rubbos
+allmusic
+online book
+mpd
+warrick
+times annotated
+djvu
+peterson
+labor statistics
+online archive
+tumor biology
+nakano
+craigslist
+duc2001
+ldoce
+swse
+xcrawl
+openlink
+york times
+tpc benchmark
+bigset
+spambase
+duc2002
+andrew ko
+asred
+lonelyplanet
+tobacco company
+justin weisz
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic
+per
+xml
+semantic web
+keyword
+svm
+rdf
+national science
+uris
+lucene
+sparql
+knn
+microsoft
+ocr
+science foundation
+semantic search
+rdbms
+gpu
+w3c
+lod
+pinterest
+seg
+gene ontology
+semantic indexing
+associated press
+point grey
+tripadvisor
+project odp
+globedb
+la times
+mgi
+elc
+okkam
+ansi
+velodyne
+openstreetmap
+hilda
+wikitravel
+java servlets
+york university
+book store
+urlbased
+worldcat
+globetp
+cocit
+mouse genome
+simple dublin
+billion triple
+ocred
+friendfeed
+amsler
+directory project
+wod
+garcia
+citebase
+blogs08
+euses consortium
+abc news
+longman
+genia
+socialpagerank
+wgen
+chicago tribune
+euses spreadsheet
+saito
+stanford daily
+runa
+wilks
+linkedgeodata
+ibm06pr
+semplore
+as3ap
+dlxs bibliographic

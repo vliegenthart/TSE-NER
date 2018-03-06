@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b298b7dd-2091-42e2-91e7-33c3e455c190" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/postprocessing/extract_new_entities.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/co_occur_HDBSCAN_28_clusters_sort_on_probability.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/co_occur_K_means_41_method_robots_lowercase.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/co_occur_K_means_44_all_ners_tuned_datapipelines_final_lowercase.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/co_occur_K_means_44_method_tuned_datapipelines_final_lowercase.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/lda_On_Full_text_45topics.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/lda_only_method_45topics_sentences.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/silhouette_scores_tuned_datapipelines_final_all_ners_5_50.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/silhouette_scores_tuned_datapipelines_final_method_5_50.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/word2vecWin5_hdbscan_12_clusters.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiments/word2vec_K_means_18_clusters.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Extract_NE.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/K_means_clustering.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TextSummarize.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/access_fulltexts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/background_process.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/classify_and_NEE.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster_Embedding_Similarity.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/X_SeedsBBMET_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/X_testB_50_manually_splitted3new.tsv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/X_test_50.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/methodtest_text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dblp_xml_processing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/enrich_NER_multilable_cls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/enrich_rhet_sent_multilab_cls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds2_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_SeedsBBMET_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_2_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_Seeds_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testA_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_testBBBMET_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train2_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_files/X_train_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds2_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_120_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_80_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_Seeds_90_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA2_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_120_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_80_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_testA_90_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train2_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_100_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_10_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_120_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_25_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_50_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_5_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_80_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluation_filesMet/X_train_90_9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/extract_entities.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facet_embedding.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lda_on_full_text.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/long_tail_main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/method_clustering.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/method_co_occur_DBSCAN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/modelFasttext.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/oldstuff/dblpReader_sep.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/oldstuff/parseArxiv.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/oldstuff/pdf_extract.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/oldstuff/sickle_test.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ontology_population.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pdf_text_analysis.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pdf_text_extractor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/acm2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/arxiv_crawler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/classifiers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/dictionary.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/downloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/fasttexttrain.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/model.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/ngram_analysis.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/paly_with_genism.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/play_with_LDA.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/play_with_datasets.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/play_with_scikit_learn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/test_acm_download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/topic_extractor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playground/useful_phrases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/postprocessing/ner_post_iteration.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/preprocess_text.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robotics_clusters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sentence_extraction_selection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/setup_server.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/show_statistics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_ner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trainingdata_extraction.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trainingdata_generation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/word2vec_DBSCAN.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/preprocessing/preprocessing_embeddings.py" afterPath="$PROJECT_DIR$/preprocessing/expansion.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/austen.prop" afterPath="$PROJECT_DIR$/data/austen.prop" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/dataset-names-testb.txt" afterPath="$PROJECT_DIR$/data/dataset-names-testb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/testB_dataset.txt" afterPath="$PROJECT_DIR$/data/testB_dataset.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default_config.py" afterPath="$PROJECT_DIR$/default_config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postprocessing/example_query.py" afterPath="$PROJECT_DIR$/postprocessing/example_query.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postprocessing/filtering.py" afterPath="$PROJECT_DIR$/postprocessing/filtering.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postprocessing/normalized_pub_distance.py" afterPath="$PROJECT_DIR$/postprocessing/normalized_pub_distance.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postprocessing/trainingdata_generation.py" afterPath="$PROJECT_DIR$/postprocessing/trainingdata_generation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/Extract_NE.py" afterPath="$PROJECT_DIR$/preprocessing/Extract_NE.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/ner_training.py" afterPath="$PROJECT_DIR$/preprocessing/ner_training.py" />
+    </list>
+    <ignored path="TSE-NER.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TSE-NER$test.coverage" NAME="test Coverage Results" MODIFIED="1519042768730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/TSE-NER$get_title.coverage" NAME="get_title Coverage Results" MODIFIED="1519080705318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TSE-NER$training_data_extraction.coverage" NAME="training_data_extraction Coverage Results" MODIFIED="1519682963774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocessing" />
+    <SUITE FILE_PATH="coverage/TSE-NER$main.coverage" NAME="main Coverage Results" MODIFIED="1519683123337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TSE-NER" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+              <folding>
+                <element signature="e#326#400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="48" selection-end-column="104" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twosent_indexing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/twosent_indexing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1050">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_paperfulltext.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/index_paperfulltext.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexing_doc2vec.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/indexing_doc2vec.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="training_data_extraction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/training_data_extraction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1695">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding>
+                <element signature="e#137#150#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataset-names-testb.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/dataset-names-testb.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="X_Seeds_25_0.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluation_files/X_Seeds_25_0.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/testB_dataset.txt" />
+        <option value="$PROJECT_DIR$/data/method-names-testb.txt" />
+        <option value="$PROJECT_DIR$/data/test.py" />
+        <option value="$PROJECT_DIR$/preprocessing/preprocessing_embeddings.py" />
+        <option value="$PROJECT_DIR$/preprocessing/Extract_NE.py" />
+        <option value="$PROJECT_DIR$/postprocessing/filtering.py" />
+        <option value="$PROJECT_DIR$/long_tail_main.py" />
+        <option value="$PROJECT_DIR$/postprocessing/normalized_pub_distance.py" />
+        <option value="$PROJECT_DIR$/postprocessing/example_query.py" />
+        <option value="$PROJECT_DIR$/default_config.py" />
+        <option value="$PROJECT_DIR$/postprocessing/ner_post_iteration.py" />
+        <option value="$PROJECT_DIR$/postprocessing/extract_new_entities.py" />
+        <option value="$PROJECT_DIR$/get_title.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/data/paper_titles" />
+        <option value="$PROJECT_DIR$/preprocessing/expansion.py" />
+        <option value="$PROJECT_DIR$/evaluation_files/term_expansionPre_Iteration0_POS_25_0.txt" />
+        <option value="$PROJECT_DIR$/data/austen.prop" />
+        <option value="$PROJECT_DIR$/preprocessing/ner_training.py" />
+        <option value="$PROJECT_DIR$/postprocessing/trainingdata_generation.py" />
+        <option value="$PROJECT_DIR$/crf_trained_files/temp0term_expansiontestB.txt" />
+        <option value="$PROJECT_DIR$/preprocessing/twosent_indexing.py" />
+        <option value="$PROJECT_DIR$/preprocessing/index_paperfulltext.py" />
+        <option value="$PROJECT_DIR$/preprocessing/doc2vec.py" />
+        <option value="$PROJECT_DIR$/preprocessing/indexing_doc2vec.py" />
+        <option value="$PROJECT_DIR$/data/dataset-names-testb.txt" />
+        <option value="$PROJECT_DIR$/preprocessing/training_data_extraction.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="729" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSE-NER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSE-NER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSE-NER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSE-NER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSE-NER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="preprocessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/preprocessing" />
+      <recent name="$PROJECT_DIR$/evaluation_files" />
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="training_data_extraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocessing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocessing/training_data_extraction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_title" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_title.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="TSE-NER" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TSE-NER" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main" />
+      <item index="2" class="java.lang.String" itemvalue="Python.training_data_extraction" />
+      <item index="3" class="java.lang.String" itemvalue="Python.get_title" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.training_data_extraction" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_title" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b298b7dd-2091-42e2-91e7-33c3e455c190" name="Default" comment="" />
+      <created>1519038145085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519038145085</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1770335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/preprocessing/expansion.py</url>
+          <line>152</line>
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/testB_method.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/X_test_50.txt" />
+    <entry file="file://$PROJECT_DIR$/data/X_testBBBMET_50_0.txt" />
+    <entry file="file://$PROJECT_DIR$/data/X_testB_50_manually_splitted3new.tsv" />
+    <entry file="file://$PROJECT_DIR$/data/testB_datasettext.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="333" selection-start-line="0" selection-start-column="205" selection-end-line="0" selection-end-column="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/testB_dataset.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="42481" column="5" selection-start-line="42481" selection-start-column="3" selection-end-line="42481" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/X_SeedsBBMET_50_0.txt" />
+    <entry file="file://$PROJECT_DIR$/data/method-names-testb.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5835">
+          <caret line="389" column="15" selection-start-line="389" selection-start-column="15" selection-end-line="389" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/methodtest_text.txt" />
+    <entry file="file://$PROJECT_DIR$/data/test.py" />
+    <entry file="file://$PROJECT_DIR$/postprocessing/example_query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhelpers/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1847">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhelpers/grobid_mapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/term_expansionPre_Iteration0_POS_10_0.txt" />
+    <entry file="file://$PROJECT_DIR$/get_title.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/Extract_NE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postprocessing/filtering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7530">
+          <caret line="515" column="4" selection-start-line="515" selection-start-column="4" selection-end-line="515" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dataset-names-train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/paper_titles">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postprocessing/extract_new_entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/expansion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2880">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#151#177#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_Seeds_10_0.txt" />
+    <entry file="file://$PROJECT_DIR$/postprocessing/normalized_pub_distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/austen.prop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="129" selection-start-line="5" selection-start-column="129" selection-end-line="5" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/term_expansionPre_Iteration0_POS_25_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/term_expansionPre_Iteration0_POS_25_0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/term_expansion_text_iteration0_splitted25_1.txt" />
+    <entry file="file://$PROJECT_DIR$/preprocessing/ner_training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postprocessing/trainingdata_generation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="226" column="30" selection-start-line="226" selection-start-column="30" selection-end-line="226" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crf_trained_files/temp0term_expansiontestA.txt" />
+    <entry file="file://$PROJECT_DIR$/evaluation_files/term_expansion_text_iteration025_0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/term_expansion_text_iteration025_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prop_files/austen25_0.prop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_train_25_4.txt" />
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_train_25_3.txt" />
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_train_25_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_train_25_0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_train_25_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_Seeds_25_0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/index_paperfulltext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/twosent_indexing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/doc2vec.py" />
+    <entry file="file://$PROJECT_DIR$/data/dataset-names-testb.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/training_data_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#137#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation_files/X_train_5_0.txt" />
+    <entry file="file://$PROJECT_DIR$/evaluation_files/term_expansion_text_iteration05_0.txt" />
+    <entry file="file://$PROJECT_DIR$/crf_trained_files/temp0term_expansiontestB.txt" />
+    <entry file="file://$PROJECT_DIR$/preprocessing/indexing_doc2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#326#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="48" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

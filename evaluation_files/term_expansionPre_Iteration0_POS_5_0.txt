@@ -1,0 +1,161 @@
+svm
+naive bayes
+prior art
+aol
+obama
+associated press
+knuth
+ncut
+nyt
+elsa
+tnr
+netplsa
+xinhua news
+gdelt
+online archive
+pubchem
+blogs08
+abc news
+stanford daily
+orbitz
+paris hilton
+york city
+tarsqi toolkit
+whereas
+keyword
+ap
+ndcg
+dom
+microsoft
+ocr
+latent dirichlet
+semantic analysis
+asr
+lsa
+bbc
+kim
+san
+j48
+annotated corpus
+la times
+citeseerx
+dirichlet allocation
+explicit semantic
+ipa
+blogscope
+york university
+headline news
+wilcoxon
+wikiwars
+tlsa
+amsler
+ratebeer
+times annotated
+heideltime
+ipas
+atlasify
+voa
+barackobama
+beeradvocate
+pbrf
+wikibios
+merkel
+york times
+chicago tribune
+forbes
+san bruno
+square garden
+xinghua english
+findblocks
+whereas
+keyword
+ap
+ndcg
+dom
+microsoft
+ocr
+latent dirichlet
+semantic analysis
+asr
+lsa
+bbc
+kim
+san
+j48
+annotated corpus
+la times
+citeseerx
+dirichlet allocation
+explicit semantic
+ipa
+blogscope
+york university
+headline news
+wilcoxon
+wikiwars
+tlsa
+amsler
+ratebeer
+times annotated
+heideltime
+ipas
+atlasify
+voa
+barackobama
+beeradvocate
+pbrf
+wikibios
+merkel
+york times
+chicago tribune
+forbes
+san bruno
+square garden
+xinghua english
+findblocks
+whereas
+keyword
+ap
+ndcg
+dom
+microsoft
+ocr
+latent dirichlet
+semantic analysis
+asr
+lsa
+bbc
+kim
+san
+j48
+annotated corpus
+la times
+citeseerx
+dirichlet allocation
+explicit semantic
+ipa
+blogscope
+york university
+headline news
+wilcoxon
+wikiwars
+tlsa
+amsler
+ratebeer
+times annotated
+heideltime
+ipas
+atlasify
+voa
+barackobama
+beeradvocate
+pbrf
+wikibios
+merkel
+york times
+chicago tribune
+forbes
+san bruno
+square garden
+xinghua english
+findblocks

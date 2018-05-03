@@ -8,7 +8,7 @@ import nltk
 import re
 from sklearn.model_selection import train_test_split
 from nltk import tokenize
-from default_config import ROOTHPATH
+from config import ROOTHPATH
 
 
 def extract(numberOfSeeds):

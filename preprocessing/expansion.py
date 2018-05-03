@@ -12,7 +12,7 @@ from sklearn.metrics import silhouette_score
 import string
 from preprocessing.Extract_NE import preprocess_NE
 from sklearn.cluster import KMeans
-from default_config import ROOTHPATH
+from config import ROOTHPATH
 import nltk
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet

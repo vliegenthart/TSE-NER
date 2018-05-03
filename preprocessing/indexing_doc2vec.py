@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch
 from elasticsearch import helpers
 import nltk
 from nltk import tokenize
-from default_config import ROOTHPATH
+from config import ROOTHPATH
 
 sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
 client = MongoClient("localhost:4321")

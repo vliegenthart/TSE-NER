@@ -13,7 +13,7 @@ from nltk.corpus import wordnet
 import string
 import gensim
 from sklearn.cluster import KMeans
-from default_config import ROOTHPATH
+from config import ROOTHPATH
 import nltk
 import requests
 from xml.etree import ElementTree

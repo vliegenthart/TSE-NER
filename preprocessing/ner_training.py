@@ -6,7 +6,7 @@ This script is used to train the NER model
 """
 import subprocess
 import re
-from default_config import ROOTHPATH
+from config import ROOTHPATH
 
 
 # Testing the results of the trained NER model on the testfile

@@ -10,7 +10,7 @@ and be stored in the "evaluation_files folder".
 
 from preprocessing import ner_training, expansion,training_data_extraction
 from postprocessing import trainingdata_generation, extract_new_entities, filtering
-from default_config import ROOTHPATH
+from config import ROOTHPATH
 from gensim.models import Doc2Vec
 from elasticsearch import Elasticsearch
 

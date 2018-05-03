@@ -5,7 +5,7 @@
 This script will be used to generate the training data from the extracted entities or extracting new training data.
 """
 from elasticsearch import Elasticsearch
-from default_config import ROOTHPATH
+from config import ROOTHPATH
 from nltk.tokenize import word_tokenize
 import re
 import csv

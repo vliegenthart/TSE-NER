@@ -9,7 +9,7 @@ from nltk.tag.stanford import StanfordNERTagger
 from nltk.corpus import stopwords
 import re
 import string
-from default_config import ROOTHPATH, STANFORD_NER_PATH
+from config import ROOTHPATH, STANFORD_NER_PATH
 
 filterbywordnet = []
 

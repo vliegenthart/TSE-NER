@@ -12,7 +12,7 @@ from config import ROOTHPATH
 
 
 def extract(numberOfSeeds):
-    print('Started training data extraction')
+    print(f'Started training data extraction for numberOfSeeds: {numberOfSeeds}')
     X_testB = []
 
     # First we get the dataset names which have been used in the testing set (TestB) to exclude them from the training sentences
@@ -21,7 +21,7 @@ def extract(numberOfSeeds):
             X_testB.append(row.strip())
     # lowercase the names
     X_testB = [ds.lower() for ds in X_testB]
-    print(X_testB)
+    print(f'Extracted X_testB with length {len(X_testB)}')
 
     # Initialize the elastic search
     es = Elasticsearch(
@@ -98,7 +98,7 @@ def extract(numberOfSeeds):
                     paragraph.append(sentence)
 
         paragraph = list(set(paragraph))
-        print(paragraph)
+        # print(paragraph)
 
         # Split the data into training and testing and keep the sentences and also the seed names for annotation that will be used later
         X_traintext, X_testA = train_test_split(

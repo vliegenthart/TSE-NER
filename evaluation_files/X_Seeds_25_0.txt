@@ -1,25 +1,25 @@
-tripadvisor
-friendfeed
-euses
+melvyl
+wookieepedia
+jester
 gene ontology
-specweb
-tpc-w
-linkedgeodata
-spambase
-worldcat
-ldoce
-craigslist
-foldoc
-oaister
-pinterest
-new york times
-duc2001
-kitti dataset
+scovo
+shop.com
+movierating
 sindice
-lexvo
+wpbench
+orkut
+cacm
+github
+dailymed
+gerbil
+econstor
+blog06
+worldcat
+technorati
+specweb
+ws-353
+oaister
+citebase
+openstreetmap
+datahub
 as3ap
-wikitravel
-jnlpba
-dmoz.org
-allmusic
-ocred

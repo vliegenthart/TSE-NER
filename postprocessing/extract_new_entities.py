@@ -9,15 +9,14 @@ from nltk.tag.stanford import StanfordNERTagger
 from nltk.corpus import stopwords
 import re
 import string
+import os
 from config import ROOTHPATH, STANFORD_NER_PATH
 
 filterbywordnet = []
 
 
 def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration, iteration, es):
-    print('started iteration.....', numberOfSeeds, name, numberOfIteration)
-
-    print('numbers:', numberOfSeeds, iteration)
+    print(f'Started iteration {numberOfIteration-1} with {numberOfSeeds} seeds and expansion type "{name}"...')
 
     # change crf_trained_files to  crf_trained_filesMet if you want to extract method entities
     path_to_model = ROOTHPATH + '/crf_trained_files/' + name + '_text_iteration' + str(prevnumberOfIteration) + '_splitted' + str(
@@ -45,6 +44,7 @@ def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration,
 
         res = es.search(index="ir", doc_type="publications",
                         body=query, size=10000)
+        
         print(len(res['hits']['hits']))
 
         for doc in res['hits']['hits']:
@@ -88,8 +88,10 @@ def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration,
         except:
             newnames.append(word.lower())
 
-    f1 = open(ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + numberOfIteration + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt', 'w')
+    file_path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration-1) + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+    f1 = open(file_path, 'w+')
     for item in filtered_words:
         f1.write(item + '\n')
     f1.close()

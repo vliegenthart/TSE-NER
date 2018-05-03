@@ -4,6 +4,9 @@ models/
 **/*/.DS_Store
 config.py
 TSE-NER.sublime-workspace
+misc/
+evaluation_files/
+post_processing_files/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

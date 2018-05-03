@@ -18,12 +18,16 @@ modeldoc2vec = Doc2Vec.load(ROOTHPATH + '/models/doc2vec.model')
 es = Elasticsearch(
     [{'host': 'localhost', 'port': 9200}])
 
-seeds=[5,10,25,50,100]
+# seeds=[5,10,25,50,100]
+seeds=[25]
 
 
 """
 Extract training data for different number of seeds
 """
+print("----------------------------")
+print("-     EXTRACTING SEEDS     -")
+print("----------------------------")
 for seed in seeds:
     training_data_extraction.extract(seed)
 
@@ -92,12 +96,12 @@ Sentence approach for the first iteration
 
 # An example for 5 iterations:
 for i in range(0, 1):
-    extract_new_entities.ne_extraction(25, 'sentence_expansion', i, i + 1, 0, es)
-    filtering.PMI(25, 'sentence_expansion', i, 0)
-    trainingdata_generation.extract(25, 'sentence_expansion', i, 0)
-    expansion.sentence_expansion_dataset(25, 'sentence_expansion', i, 0)
-    trainingdata_generation.generate_trainingSE(25, 'sentence_expansion', i, 0)
-    ner_training.create_austenprop(25, 'sentence_expansion', 0)
-    ner_training.train(25, 'sentence_expansion', 0)
+    extract_new_entities.ne_extraction(25, 'term_expansion', i, i + 1, 0, es)
+    filtering.PMI(25, 'term_expansion', i, 0)
+    trainingdata_generation.extract(25, 'term_expansion', i, 0)
+    expansion.term_expansion_dataset(25, 'term_expansion', i, 0)
+    trainingdata_generation.generate_trainingTE(25, 'term_expansion', i, 0)
+    ner_training.create_austenprop(25, 'term_expansion', 0)
+    ner_training.train(25, 'term_expansion', 0)
 
 ########################################################

@@ -18,7 +18,7 @@ import nltk
 import requests
 from xml.etree import ElementTree
 from postprocessing import normalized_pub_distance
-
+import os
 
 class autovivify_list(dict):
     '''Pickleable class to replicate the functionality of collections.defaultdict'''
@@ -68,11 +68,25 @@ def find_word_clusters(labels_array, cluster_labels):
         cluster_to_words[i].append(labels_array[c])
     return cluster_to_words
 
+def setup_files(numberOfSeeds, name, numberOfIteration, iteration):
+    print("Setting up filtering files...")
+    corpus_file_path = ROOTHPATH + '/evaluation_files/X_Seeds_' + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
+    pos_file_path = ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + str(numberOfIteration) + "_POS_" + str(numberOfSeeds) + "_" + str(iteration) + ".txt"
+    ppf_file_path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration) + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
+
+    os.makedirs(os.path.dirname(corpus_file_path), exist_ok=True)
+    os.makedirs(os.path.dirname(pos_file_path), exist_ok=True)
+    os.makedirs(os.path.dirname(ppf_file_path), exist_ok=True)
+
+    corpus_file = open(corpus_file_path, 'r')
+    pos_file = open(pos_file_path, 'w')
+    ppf_file = open(ppf_file_path, 'r')
+
+    return [corpus_file, pos_file, ppf_file]
 
 """
 Majority vote filtering
 """
-
 
 def majorityVote(result):
     finalresult = []
@@ -116,25 +130,20 @@ def majorityVote(result):
 Embedding clustering filtering
 """
 
-
 def ec_clustering(numberOfSeeds, name, numberOfIteration, iteration):
     print('started embeding ranking....', numberOfSeeds, name, iteration)
+    corpus_file, pos_file, ppf_file = setup_files(numberOfSeeds, name, numberOfIteration, iteration)
     propernouns = []
 
     # read the extracted entities from the file
-    path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + numberOfIteration + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-    with open(path, "r") as file:
+    
+    with ppf_file as file:
         for row in file.readlines():
             propernouns.append(row.strip())
     dsnames = []
     dsnamestemp = []
-
-    # read the seed terms
-    corpuspath = ROOTHPATH + '/evaluation_files/X_Seeds_' + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-
-    with open(corpuspath, "r") as file:
+    
+    with corpus_file as file:
         for row in file.readlines():
             dsnames.append(row.strip())
             propernouns.append(row.strip())
@@ -142,8 +151,7 @@ def ec_clustering(numberOfSeeds, name, numberOfIteration, iteration):
     # read the new seed terms (if exist)
     for i in range(1, int(numberOfIteration) + 1):
         try:
-            with open(ROOTHPATH + '/evaluation_files/' + name + '_Iteration' + str(i) + '_POS_' + str(
-                    numberOfSeeds) + '_' + str(iteration) + '.txt', 'r') as file:
+            with open(ROOTHPATH + '/evaluation_files/' + name + '_Iteration' + str(i) + '_POS_' + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'r') as file:
                 for row in file.readlines():
                     dsnames.append(row.strip())
                     propernouns.append(row.strip())
@@ -169,8 +177,7 @@ def ec_clustering(numberOfSeeds, name, numberOfIteration, iteration):
 
     sentences_split = [s.lower() for s in newpropernouns]
 
-    df, labels_array = build_word_vector_matrix(
-        ROOTHPATH + "/models/modelword2vecbigram.txt", sentences_split)
+    df, labels_array = build_word_vector_matrix(ROOTHPATH + "/models/modelword2vecbigram.txt", sentences_split)
 
     sse = {}
     maxcluster = 0
@@ -204,14 +211,12 @@ def ec_clustering(numberOfSeeds, name, numberOfIteration, iteration):
                       "The average silhouette_score is :", silhouette_avg)
                 if silhouette_avg > maxcluster:
                     maxcluster = silhouette_avg
-                    thefile = open(
-                        ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + numberOfIteration + "_POS_" + str(
-                            numberOfSeeds) + "_" + str(iteration) + ".txt", 'w')
+                    
                     finallist = list(set(finallist))
 
                     for item in finallist:
                         if item.lower() not in dsnamestemp and item.lower() not in dsnames:
-                            thefile.write("%s\n" % item)
+                            pos_file.write("%s\n" % item)
 
             except:
                 print("ERROR:::Silhoute score invalid")
@@ -249,14 +254,12 @@ def ec_clustering(numberOfSeeds, name, numberOfIteration, iteration):
                       "The average silhouette_score is :", silhouette_avg)
                 if silhouette_avg > maxcluster:
                     maxcluster = silhouette_avg
-                    thefile = open(
-                        ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + numberOfIteration + "_POS_" + str(
-                            numberOfSeeds) + "_" + str(iteration) + ".txt", 'w')
+                    
                     finallist = list(set(finallist))
 
                     for item in finallist:
                         if item.lower() not in dsnamestemp and item.lower() not in dsnames:
-                            thefile.write("%s\n" % item)
+                            pos_file.write("%s\n" % item)
 
             except:
                 print("ERROR:::Silhoute score invalid")
@@ -272,20 +275,16 @@ def Kb_ecall(numberOfSeeds, name, numberOfIteration, iteration):
     # for iteration in range(0,10):
     propernouns = []
     print('filteriiingg....' + str(numberOfSeeds) + '_' + str(name) + '_' + str(iteration))
-
-    path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration) + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-    print(path)
-    with open(path, "r") as file:
+    corpus_file, pos_file, ppf_file = setup_files(numberOfSeeds, name, numberOfIteration, iteration)
+    
+    with ppf_file as file:
         for row in file.readlines():
             propernouns.append(row.strip())
 
     dsnames = []
 
-    corpuspath = ROOTHPATH + '/evaluation_files/X_Seeds_' + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-
-    with open(corpuspath, "r") as file:
+    
+    with corpus_file as file:
         for row in file.readlines():
             dsnames.append(row.strip())
             propernouns.append(row.strip())
@@ -362,19 +361,16 @@ def Kb_ecall(numberOfSeeds, name, numberOfIteration, iteration):
 
                 if silhouette_avg > maxcluster:
                     maxcluster = silhouette_avg
-                    thefile = open(
-                        ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + str(
-                            numberOfIteration) + "_POS_" + str(
-                            numberOfSeeds) + "_" + str(iteration) + ".txt", 'w')
+                    
                     finallist = list(set(finallist))
 
                     for item in finallist:
                         if item.lower() not in dsnamestemp and item.lower() not in dsnames:
-                            thefile.write("%s\n" % item)
+                            pos_file.write("%s\n" % item)
                     for item in bigrams:
                         if item.lower() not in dsnamestemp and item.lower() not in dsnames:
-                            thefile.write("%s\n" % item)
-                    thefile.close()
+                            pos_file.write("%s\n" % item)
+                    pos_file.close()
             except:
                 print("ERROR:::Silhoute score invalid")
                 continue
@@ -419,18 +415,16 @@ def Kb_ecall(numberOfSeeds, name, numberOfIteration, iteration):
 
                 if silhouette_avg > maxcluster:
                     maxcluster = silhouette_avg
-                    thefile = open(
-                        ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + numberOfIteration + "_POS_" + str(
-                            numberOfSeeds) + "_" + str(iteration) + ".txt", 'w')
+                    
                     finallist = list(set(finallist))
 
                     for item in finallist:
                         if item.lower() not in dsnamestemp and item.lower() not in dsnames:
-                            thefile.write("%s\n" % item)
+                            pos_file.write("%s\n" % item)
                     for item in bigrams:
                         if item.lower() not in dsnamestemp and item.lower() not in dsnames:
-                            thefile.write("%s\n" % item)
-                    thefile.close()
+                            pos_file.write("%s\n" % item)
+                    pos_file.close()
             except:
                 print("ERROR:::Silhoute score invalid")
                 continue
@@ -445,19 +439,15 @@ def Kb(numberOfSeeds, name, numberOfIteration, iteration):
     # for iteration in range(0,10):
     propernouns = []
     print('filteriiingg....' + str(numberOfSeeds) + '_' + str(name) + '_' + str(iteration))
+    corpus_file, pos_file, ppf_file = setup_files(numberOfSeeds, name, numberOfIteration, iteration)
 
-    path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration) + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-    print(path)
-    with open(path, "r") as file:
+    with ppf_file as file:
         for row in file.readlines():
             propernouns.append(row.strip())
 
     dsnames = []
-    corpuspath = ROOTHPATH + '/evaluation_files/X_Seeds_' + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-
-    with open(corpuspath, "r") as file:
+    
+    with corpus_file as file:
         for row in file.readlines():
             dsnames.append(row.strip())
             propernouns.append(row.strip())
@@ -497,15 +487,13 @@ def Kb(numberOfSeeds, name, numberOfIteration, iteration):
                 finallist.append(nn.replace('_', ' '))
         except:
             finallist.append(nn.replace('_', ' '))
-    thefile = open(
-        ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + numberOfIteration + "_POS_" + str(
-            numberOfSeeds) + "_" + str(iteration) + ".txt", 'w')
+    
     finallist = list(set(finallist))
 
     for item in finallist:
         if item.lower() not in dsnames:
-            thefile.write("%s\n" % item)
-    thefile.close()
+            pos_file.write("%s\n" % item)
+    pos_file.close()
 
 
 """
@@ -517,18 +505,14 @@ def PMI(numberOfSeeds, name, numberOfIteration, iteration):
     # for iteration in range(0,10):
     propernouns = []
     print('filteriiingg....' + str(numberOfSeeds) + '_' + str(name) + '_' + str(iteration))
+    corpus_file, pos_file, ppf_file = setup_files(numberOfSeeds, name, numberOfIteration, iteration)  
 
-    path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration) + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-    print(path)
-    with open(path, "r") as file:
+    with ppf_file as file:
         for row in file.readlines():
             propernouns.append(row.strip())
     dsnames = []
-    corpuspath = ROOTHPATH + '/evaluation_files/X_Seeds_' + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
 
-    with open(corpuspath, "r") as file:
+    with corpus_file as file:
         for row in file.readlines():
             dsnames.append(row.strip())
 
@@ -545,14 +529,12 @@ def PMI(numberOfSeeds, name, numberOfIteration, iteration):
             newpropernouns.append(pp)
     finallist = normalized_pub_distance.NPD(newpropernouns)
 
-    thefile = open(
-        ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + numberOfIteration + "_POS_" + str(
-            numberOfSeeds) + "_" + str(iteration) + ".txt", 'w')
+    
     finallist = list(set(finallist))
 
     for item in finallist:
-        thefile.write("%s\n" % item)
-    thefile.close()
+        pos_file.write("%s\n" % item)
+    pos_file.close()
 
 
 """
@@ -564,21 +546,19 @@ def MV(numberOfSeeds, name, numberOfIteration, iteration):
     # for iteration in range(0,10):
     propernouns = []
     print('filteriiingg....' + str(numberOfSeeds) + '_' + str(name) + '_' + str(iteration))
+    corpus_file, pos_file, ppf_file = setup_files(numberOfSeeds, name, numberOfIteration, iteration)
 
     """
     Use the extracted entities from the publications
     """
-    path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration) + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-    print(path)
-    with open(path, "r") as file:
+    
+    
+    with ppf_file as file:
         for row in file.readlines():
             propernouns.append(row.strip())
     dsnames = []
-    corpuspath = ROOTHPATH + '/evaluation_files/X_Seeds_' + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt'
-
-    with open(corpuspath, "r") as file:
+    
+    with corpus_file as file:
         for row in file.readlines():
             dsnames.append(row.strip())
 
@@ -595,11 +575,9 @@ def MV(numberOfSeeds, name, numberOfIteration, iteration):
             newpropernouns.append(pp)
     finallist = majorityVote(newpropernouns, numberOfSeeds, iteration)
 
-    thefile = open(
-        ROOTHPATH + "/evaluation_filesMet/" + name + "_Iteration" + numberOfIteration + "_POS_" + str(
-            numberOfSeeds) + "_" + str(iteration) + ".txt", 'w')
+    
     finallist = list(set(finallist))
 
     for item in finallist:
-        thefile.write("%s\n" % item)
-    thefile.close()
+        pos_file.write("%s\n" % item)
+    pos_file.close()

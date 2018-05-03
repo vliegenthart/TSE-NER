@@ -50,7 +50,7 @@ def extract(numberOfSeeds, name, numberOfIteration, iteration):
     These are all sentences containing any term from the test set, and they need to to be excluded from any
      training
     """
-    fileUnlabelled = open('/data/testB_datasettext.txt')
+    fileUnlabelled = open(f'{ROOTHPATH}/data/testB_datasettext.txt')
 
     text = fileUnlabelled.read()
     text = text.replace('\\', '')

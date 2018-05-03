@@ -1,25 +1,25 @@
-euses
-friendfeed
-nasdaq
-refseq
-ace04
-shop.com
-datahub
-wpbench
-orkut
-spambase
-wikitravel
-gdelt
-chemid
-ratebeer
+letor
 tac kbp
-wechat
-as3ap
-tpc-w
-stack overflow
-intact
-blogpulse
+sindice
+wookieepedia
+ratebeer
+wt2g
 github
+facc
+scovo
+replab
+imageclef
+pubchem
+nasdaq
+gerbil
+tripadvisor
+shop.com
+xanga
+quora
+mediaeval
+ask.com
+pinterest
+billion triple challenge
+douban
+cifar
 worldcat
-moviepilot
-fbis

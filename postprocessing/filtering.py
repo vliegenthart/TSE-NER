@@ -504,7 +504,7 @@ PMI filtering
 def PMI(numberOfSeeds, name, numberOfIteration, iteration):
     # for iteration in range(0,10):
     propernouns = []
-    print('filteriiingg....' + str(numberOfSeeds) + '_' + str(name) + '_' + str(iteration))
+    print('Filtering PMI: ' + str(numberOfSeeds) + '_' + str(name) + '_' + str(iteration))
     corpus_file, pos_file, ppf_file = setup_files(numberOfSeeds, name, numberOfIteration, iteration)  
 
     with ppf_file as file:

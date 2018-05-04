@@ -139,9 +139,6 @@ def store_datasetname_in_mongo(db, id, title,journal, year, word,inwordNet,filte
         return True
 
 
-
-
-
 filter_conference = ["WWW", "ICSE", "VLDB", "JCDL", "TREC", "SIGIR", "ICWSM", "ECDL", "ESWC"]
 
 for conference in filter_conference:

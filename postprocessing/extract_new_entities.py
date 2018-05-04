@@ -10,7 +10,7 @@ from nltk.corpus import stopwords
 import re
 import string
 import os
-from config import ROOTHPATH, STANFORD_NER_PATH
+from config import ROOTHPATH, STANFORD_NER_PATH, filter_conference
 
 filterbywordnet = []
 
@@ -19,8 +19,7 @@ def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration,
     print(f'Started iteration {numberOfIteration-1} with {numberOfSeeds} seeds and expansion type "{name}"...')
 
     # change crf_trained_files to  crf_trained_filesMet if you want to extract method entities
-    path_to_model = ROOTHPATH + '/crf_trained_files/' + name + '_text_iteration' + str(prevnumberOfIteration) + '_splitted' + str(
-        numberOfSeeds) + '_' + str(iteration) + '.ser.gz'
+    path_to_model = ROOTHPATH + '/crf_trained_files/' + name + '_text_iteration' + str(prevnumberOfIteration) + '_splitted' + str(numberOfSeeds) + '_' + str(iteration) + '.ser.gz'
 
     """
     use the trained Stanford NER model to extract entities from the publications
@@ -29,26 +28,25 @@ def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration,
 
     newnames = []
     result = []
-    filter_conference = ["WWW", "ICSE", "VLDB", "JCDL", "TREC", "SIGIR", "ICWSM", "ECDL", "ESWC", "TPDL"]
+
     for conference in filter_conference:
 
         query = {"query":
-            {"match": {
-                "journal": {
-                    "query": conference,
-                    "operator": "and"
+            {
+                "match": 
+                {
+                    "journal": conference
                 }
             }
-            }
         }
-
-        res = es.search(index="ir", doc_type="publications",
-                        body=query, size=10000)
-        
-        print(len(res['hits']['hits']))
-
+        res = es.search(index="ir", doc_type="publications", body=query, size=10000)
+       
+        print(str(res['hits']['total']) + f' documents found for conference {conference}')
+        counter = 0
         for doc in res['hits']['hits']:
-            sentence = doc["_source"]["content"]
+            counter+=1
+            if counter % 20 is 0: print(f'Tagged {counter}/' + str(res['hits']['total']), 'full texts')
+            sentence = doc["_source"]["text"]
             sentence = sentence.replace("@ BULLET", "")
             sentence = sentence.replace("@BULLET", "")
             sentence = sentence.replace(", ", " , ")
@@ -63,6 +61,7 @@ def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration,
             tagged = nertagger.tag(sentence.split())
 
             for jj, (a, b) in enumerate(tagged):
+                print(jj, a, b)
                 # change DATA to MET if you want to extract method entities
                 if b == 'DATA':
                     a = a.translate(str.maketrans('', '', string.punctuation))
@@ -76,6 +75,8 @@ def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration,
                         continue
 
                     result.append(a)
+
+        print("Results for", conference , result)
 
     result = list(set(result))
     result = [w.replace('"', '') for w in result]
@@ -91,7 +92,7 @@ def ne_extraction(numberOfSeeds, name, prevnumberOfIteration, numberOfIteration,
     file_path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration-1) + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
-    f1 = open(file_path, 'w+')
+    f1 = open(file_path, 'w')
     for item in filtered_words:
         f1.write(item + '\n')
     f1.close()

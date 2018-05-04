@@ -3,6 +3,13 @@ from pymongo import MongoClient
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
 import nltk
+
+import os,sys,inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0,parentdir)
+from config import filter_conference
+
 sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
 ###############################
 
@@ -58,7 +65,6 @@ def return_chapters(mongo_string_search, db):
     return list_of_docs
 
 
-filter_conference = ["WWW", "ICSE", "VLDB", "JCDL", "TREC",  "SIGIR", "ICWSM", "ECDL", "ESWC", "TPDL"]
 ###############################
 
 # query = {"content.fulltext": {"$exists": "true"}}
@@ -70,32 +76,36 @@ list_of_pubs=[]
 for booktitle in filter_conference:
     mongo_string_search = {'$and': [{'booktitle': booktitle}, {'content.fulltext': {'$exists': True}}]}
     list_of_pubs.append(return_chapters(mongo_string_search, db))
-for pubs in list_of_pubs:
-    actions = []
-    for cur in pubs:
-        print(cur['dblpkey'])
-        print(cur['journal'])
+    print(f'Fetched publications from MongoDB for conference {booktitle}')
 
+print(f'Creating actions for all publications')
+counter=0
+for index, pubs in enumerate(list_of_pubs):
+    print(f'Creating actions for conference {filter_conference[index]}')
+    actions = []
+    counter = 0
+    for cur in pubs:
+        counter += 1
+        if counter % 100 is 0: print(f'Created {counter}/{len(pubs)}')
+        print(cur['dblpkey'])
+        # print('JOURNAL', cur['journal'])
 
         text = cur["content"]
-
         actions.append({
                     "_index": "ir",
                     "_type": "publications",
                     "_id" : cur['dblpkey'],
-                    "journal":cur['journal'],
-                    "year":cur['year'],
                     "_source" : {
                         "text" : text,
+                        "journal":cur['journal'],
+                        "year":cur['year'],
                         "title": cur["title"]
                     }
                 })
-    print(len(actions))
-
-
+    
     if len(actions) == 0:
-            continue
+        continue
 
     res = helpers.bulk(es,actions)
+    print(f'Indexed {len(actions)} publications for conference {booktitle}')
     print(res)
-

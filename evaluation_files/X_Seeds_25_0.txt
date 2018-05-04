@@ -1,25 +1,25 @@
-melvyl
-wookieepedia
-jester
-gene ontology
-scovo
-shop.com
-movierating
-sindice
-wpbench
-orkut
-cacm
-github
-dailymed
-gerbil
-econstor
-blog06
-worldcat
+umls
+wikia
+bdbcomp
+ionosphere
+xanga
+euses
+tac kbp
+semeval
+locuslink
+dbsnp
+stanford large network dataset
+dmoz.org
 technorati
-specweb
-ws-353
-oaister
+sindice
+billion triple challenge
+dailymed
+jester
 citebase
-openstreetmap
-datahub
-as3ap
+imagenet
+fedweb
+spambase
+webkb
+newsvine
+linkedgeodata
+fbis

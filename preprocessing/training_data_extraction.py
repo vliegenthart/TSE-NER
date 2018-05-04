@@ -31,6 +31,7 @@ def extract(numberOfSeeds):
 
     # List of seed names
     corpuspath = ROOTHPATH + "/data/dataset-names-train.txt"
+
     with open(corpuspath, "r") as file:
         for row in file.readlines():
             dsnames.append(row.strip())
@@ -43,6 +44,7 @@ def extract(numberOfSeeds):
 
         # shuffle the list
         X_train = random.sample(dsnames, numberOfSeeds)
+        print(f'Extracted X_train with length {len(X_train)}')
 
         paragraph = []
 
@@ -90,10 +92,7 @@ def extract(numberOfSeeds):
 
 
                 if any(ext in sentence.lower() for ext in X_testB):
-
-
                     continue
-
                 else:
                     paragraph.append(sentence)
 

@@ -71,7 +71,7 @@ def extract(numberOfSeeds, name, numberOfIteration, iteration):
     """
         Exclude all the entities appeared in the test file from the training file
     """
-    with open('/data/dataset-names-testb.txt', 'r') as file:
+    with open(f'{ROOTHPATH}/data/dataset-names-testb.txt', 'r') as file:
         # with open('/data/method-names-testb', 'r') as file:
         for row in file.readlines():
             X_testB.append(row.strip())
@@ -82,8 +82,7 @@ def extract(numberOfSeeds, name, numberOfIteration, iteration):
         Use the  extracted entities in the Expansion steps to find sentences containing those seeds
     """
     for i in range(1, int(numberOfIteration) + 1):
-        with open(ROOTHPATH + '/evaluation_files/' + name + '_Iteration' + str(i) + '_POS_' + str(
-                numberOfSeeds) + '_' + str(iteration) + '.txt', 'r') as file:
+        with open(ROOTHPATH + '/evaluation_files/' + name + '_Iteration' + str(i) + '_POS_' + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'r') as file:
             for row in file.readlines():
                 dsnames.append(row.strip())
 

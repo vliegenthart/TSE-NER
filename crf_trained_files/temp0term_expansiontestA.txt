@@ -1,0 +1,380 @@
+Invoked on Tue May 08 20:37:07 JST 2018 with arguments: -prop /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/prop_files/austen25_0.prop
+useLastRealWord=true
+useClassFeature=true
+useTypeSeqs2=true
+testFile=/Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt
+useNextRealWord=true
+wordShape=chris2useLC
+lowercaseNGrams=true
+useTypeySequences=true
+serializeTo=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_0.ser.gz
+useNGrams=true
+normalize=true
+useAbbr=true
+usePrev=true
+useLemmas=true
+useNext=true
+maxLeft=1
+trainFile=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_0.txt
+useOccurrencePatterns=true
+map=word=0,answer=1
+useWord=true
+useTypeSeqs=true
+numFeatures = 49943
+Time to convert docs to feature indices: 1.6 seconds
+numClasses: 2 [0=O,1=DATA]
+numDocuments: 682
+numDatums: 29142
+numFeatures: 49943
+Time to convert docs to data/labels: 0.6 seconds
+numWeights: 103738
+QNMinimizer called on double function of 103738 variables, using M = 25.
+               An explanation of the output:
+Iter           The number of iterations
+evals          The number of function evaluations
+SCALING        <D> Diagonal scaling was used; <I> Scaled Identity
+LINESEARCH     [## M steplength]  Minpack linesearch
+                   1-Function value was too high
+                   2-Value ok, gradient positive, positive curvature
+                   3-Value ok, gradient negative, positive curvature
+                   4-Value ok, gradient negative, negative curvature
+               [.. B]  Backtracking
+VALUE          The current function value
+TIME           Total elapsed time
+|GNORM|        The current norm of the gradient
+{RELNORM}      The ratio of the current to initial gradient norms
+AVEIMPROVE     The average improvement / current value
+EVALSCORE      The last available eval score
+ 
+Iter ## evals ## <SCALING> [LINESEARCH] VALUE TIME |GNORM| {RELNORM} AVEIMPROVE EVALSCORE
+
+Iter 1 evals 1 <D> [11M 8.888E-5] 3.491E4 0.37s |3.726E3| {6.447E-2} 0.000E0 - 
+Iter 2 evals 4 <D> [3313132M 1.190E1] 2.187E4 0.85s |2.746E3| {4.752E-2} 2.981E-1 - 
+Iter 3 evals 12 <D> [1M 9.650E-3] 2.151E4 0.96s |2.306E3| {3.990E-2} 2.076E-1 - 
+Iter 4 evals 14 <D> [2M 3.644E-1] 2.068E4 1.13s |9.420E2| {1.630E-2} 1.720E-1 - 
+Iter 5 evals 16 <D> [M 1.000E0] 1.996E4 1.25s |2.456E3| {4.249E-2} 1.497E-1 - 
+Iter 6 evals 17 <D> [M 1.000E0] 1.952E4 1.31s |7.515E2| {1.300E-2} 1.314E-1 - 
+Iter 7 evals 18 <D> [M 1.000E0] 1.922E4 1.36s |6.086E2| {1.053E-2} 1.167E-1 - 
+Iter 8 evals 19 <D> [M 1.000E0] 1.877E4 1.41s |4.556E2| {7.884E-3} 1.074E-1 - 
+Iter 9 evals 20 <D> [M 1.000E0] 1.826E4 1.47s |3.273E2| {5.664E-3} 1.013E-1 - 
+Iter 10 evals 21 <D> [M 1.000E0] 1.754E4 1.55s |2.496E2| {4.318E-3} 9.898E-2 - 
+Iter 11 evals 22 <D> [M 1.000E0] 1.603E4 1.64s |4.886E2| {8.455E-3} 3.641E-2 - 
+Iter 12 evals 23 <D> [M 1.000E0] 1.267E4 1.73s |5.876E2| {1.017E-2} 6.986E-2 - 
+Iter 13 evals 24 <D> [1M 4.233E-1] 1.123E4 1.85s |3.112E2| {5.385E-3} 8.419E-2 - 
+Iter 14 evals 26 <D> [M 1.000E0] 1.055E4 1.91s |2.646E2| {4.578E-3} 8.930E-2 - 
+Iter 15 evals 27 <D> [1M 7.569E-2] 9.705E3 2.04s |2.112E2| {3.654E-3} 1.011E-1 - 
+Iter 16 evals 29 <D> [1M 6.966E-2] 8.688E3 2.17s |1.590E2| {2.750E-3} 1.212E-1 - 
+Iter 17 evals 31 <D> [1M 1.745E-1] 7.811E3 2.26s |2.245E2| {3.885E-3} 1.403E-1 - 
+Iter 18 evals 33 <D> [2M 3.587E-1] 6.599E3 2.35s |6.845E2| {1.184E-2} 1.767E-1 - 
+Iter 19 evals 35 <D> [2M 4.326E-1] 5.101E3 2.44s |9.377E2| {1.622E-2} 2.440E-1 - 
+Iter 20 evals 37 <D> [M 1.000E0] 3.712E3 2.48s |8.390E2| {1.452E-2} 3.320E-1 - 
+Iter 21 evals 38 <D> [M 1.000E0] 2.772E3 2.52s |5.011E2| {8.670E-3} 3.569E-1 - 
+Iter 22 evals 39 <D> [1M 3.222E-1] 2.515E3 2.59s |3.066E2| {5.305E-3} 3.463E-1 - 
+Iter 23 evals 41 <D> [M 1.000E0] 2.121E3 2.64s |2.837E2| {4.908E-3} 3.973E-1 - 
+Iter 24 evals 42 <D> [1M 1.244E-2] 2.057E3 2.75s |2.361E2| {4.085E-3} 3.718E-1 - 
+Iter 25 evals 44 <D> [M 1.000E0] 1.908E3 2.81s |2.363E2| {4.088E-3} 3.554E-1 - 
+Iter 26 evals 45 <D> [M 1.000E0] 1.819E3 2.86s |2.518E2| {4.357E-3} 3.294E-1 - 
+Iter 27 evals 46 <D> [M 1.000E0] 1.724E3 2.92s |1.756E2| {3.038E-3} 2.827E-1 - 
+Iter 28 evals 47 <D> [M 1.000E0] 1.643E3 2.98s |1.043E2| {1.804E-3} 2.104E-1 - 
+Iter 29 evals 48 <D> [M 1.000E0] 1.530E3 3.04s |1.038E2| {1.796E-3} 1.425E-1 - 
+Iter 30 evals 49 <D> [M 1.000E0] 1.379E3 3.10s |3.257E2| {5.636E-3} 1.010E-1 - 
+Iter 31 evals 50 <D> [M 1.000E0] 1.236E3 3.15s |1.376E2| {2.380E-3} 1.036E-1 - 
+Iter 32 evals 51 <D> [M 1.000E0] 1.072E3 3.19s |9.161E1| {1.585E-3} 9.789E-2 - 
+Iter 33 evals 52 <D> [M 1.000E0] 8.629E2 3.27s |8.367E1| {1.448E-3} 1.384E-1 - 
+Iter 34 evals 53 <D> [M 1.000E0] 6.984E2 3.32s |2.012E2| {3.481E-3} 1.732E-1 - 
+Iter 35 evals 54 <D> [M 1.000E0] 5.458E2 3.38s |1.135E2| {1.963E-3} 2.333E-1 - 
+Iter 36 evals 55 <D> [M 1.000E0] 4.779E2 3.46s |7.004E1| {1.212E-3} 2.608E-1 - 
+Iter 37 evals 56 <D> [M 1.000E0] 4.105E2 3.55s |3.731E1| {6.456E-4} 3.003E-1 - 
+Iter 38 evals 57 <D> [M 1.000E0] 3.770E2 3.63s |4.142E1| {7.168E-4} 3.059E-1 - 
+Iter 39 evals 58 <D> [1M 3.854E-1] 3.624E2 3.85s |2.949E1| {5.102E-4} 2.806E-1 - 
+Iter 40 evals 60 <D> [M 1.000E0] 3.480E2 3.91s |2.700E1| {4.673E-4} 2.551E-1 - 
+Iter 41 evals 61 <D> [1M 4.735E-1] 3.356E2 4.00s |6.485E1| {1.122E-3} 2.193E-1 - 
+Iter 42 evals 63 <D> [M 1.000E0] 3.288E2 4.04s |8.836E1| {1.529E-3} 1.624E-1 - 
+Iter 43 evals 64 <D> [M 1.000E0] 3.202E2 4.08s |1.611E1| {2.788E-4} 1.181E-1 - 
+Iter 44 evals 65 <D> [M 1.000E0] 3.157E2 4.12s |1.695E1| {2.934E-4} 7.287E-2 - 
+Iter 45 evals 66 <D> [M 1.000E0] 3.098E2 4.17s |1.581E1| {2.736E-4} 5.426E-2 - 
+Iter 46 evals 67 <D> [M 1.000E0] 3.070E2 4.20s |1.172E1| {2.028E-4} 3.373E-2 - 
+Iter 47 evals 68 <D> [1M 4.271E-1] 3.048E2 4.27s |1.759E1| {3.043E-4} 2.371E-2 - 
+Iter 48 evals 70 <D> [M 1.000E0] 3.028E2 4.31s |6.208E0| {1.074E-4} 1.967E-2 - 
+Iter 49 evals 71 <D> [M 1.000E0] 3.019E2 4.34s |6.912E0| {1.196E-4} 1.526E-2 - 
+Iter 50 evals 72 <D> [M 1.000E0] 3.016E2 4.38s |1.755E1| {3.036E-4} 1.125E-2 - 
+Iter 51 evals 73 <D> [M 1.000E0] 3.009E2 4.42s |6.322E0| {1.094E-4} 9.293E-3 - 
+Iter 52 evals 74 <D> [M 1.000E0] 3.007E2 4.47s |5.647E0| {9.771E-5} 6.491E-3 - 
+Iter 53 evals 75 <D> [M 1.000E0] 3.005E2 4.52s |2.729E0| {4.723E-5} 5.082E-3 - 
+Iter 54 evals 76 <D> [M 1.000E0] 3.002E2 4.56s |3.817E0| {6.604E-5} 3.182E-3 - 
+Iter 55 evals 77 <D> [M 1.000E0] 3.001E2 4.61s |3.157E0| {5.463E-5} 2.298E-3 - 
+Iter 56 evals 78 <D> [M 1.000E0] 2.999E2 4.66s |2.520E0| {4.360E-5} 1.621E-3 - 
+Iter 57 evals 79 <D> [M 1.000E0] 2.999E2 4.71s |5.370E0| {9.292E-5} 9.801E-4 - 
+Iter 58 evals 80 <D> [M 1.000E0] 2.998E2 4.75s |4.305E0| {7.449E-5} 7.115E-4 - 
+Iter 59 evals 81 <D> [M 1.000E0] 2.997E2 4.80s |2.592E0| {4.486E-5} 6.466E-4 - 
+Iter 60 evals 82 <D> [M 1.000E0] 2.996E2 4.85s |1.801E0| {3.117E-5} 4.092E-4 - 
+Iter 61 evals 83 <D> [M 1.000E0] 2.995E2 4.89s |3.467E0| {6.000E-5} 4.063E-4 - 
+Iter 62 evals 84 <D> [2M 5.228E-1] 2.994E2 4.99s |3.355E0| {5.806E-5} 3.497E-4 - 
+Iter 63 evals 86 <D> [1M 4.226E-1] 2.994E2 5.08s |3.533E0| {6.114E-5} 2.750E-4 - 
+Iter 64 evals 88 <D> [M 1.000E0] 2.993E2 5.12s |2.278E0| {3.942E-5} 2.430E-4 - 
+Iter 65 evals 89 <D> [M 1.000E0] 2.993E2 5.17s |1.274E0| {2.205E-5} 2.076E-4 - 
+Iter 66 evals 90 <D> [M 1.000E0] 2.993E2 5.24s |1.205E0| {2.085E-5} 2.105E-4 - 
+Iter 67 evals 91 <D> [M 1.000E0] 2.992E2 5.28s |1.173E0| {2.030E-5} 1.896E-4 - 
+Iter 68 evals 92 <D> [M 1.000E0] 2.992E2 5.33s |2.214E0| {3.831E-5} 1.712E-4 - 
+Iter 69 evals 93 <D> [M 1.000E0] 2.992E2 5.38s |9.375E-1| {1.622E-5} 1.654E-4 - 
+Iter 70 evals 94 <D> [M 1.000E0] 2.991E2 5.43s |1.123E0| {1.944E-5} 1.242E-4 - 
+Iter 71 evals 95 <D> [1M 3.948E-1] 2.991E2 5.56s |1.608E0| {2.783E-5} 1.073E-4 - 
+Iter 72 evals 97 <D> [M 1.000E0] 2.991E2 5.61s |1.059E0| {1.833E-5} 1.026E-4 - 
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Total time spent in optimization: 5.71s
+CRFClassifier training ... done [8.4 sec].
+Serializing classifier to /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_0.ser.gz...
+done.
+Exception in thread "main" edu.stanford.nlp.io.RuntimeIOException: java.io.FileNotFoundException: /Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt (No such file or directory)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:509)
+	at edu.stanford.nlp.io.IOUtils.readerFromFile(IOUtils.java:550)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.setNextObject(ReaderIteratorFactory.java:189)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.<init>(ReaderIteratorFactory.java:161)
+	at edu.stanford.nlp.objectbank.ResettableReaderIteratorFactory.iterator(ResettableReaderIteratorFactory.java:98)
+	at edu.stanford.nlp.objectbank.ObjectBank$OBIterator.<init>(ObjectBank.java:414)
+	at edu.stanford.nlp.objectbank.ObjectBank.iterator(ObjectBank.java:253)
+	at edu.stanford.nlp.sequences.ObjectBankWrapper.iterator(ObjectBankWrapper.java:45)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.classifyAndWriteAnswers(AbstractSequenceClassifier.java:1178)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.classifyAndWriteAnswers(AbstractSequenceClassifier.java:1122)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.classifyAndWriteAnswers(AbstractSequenceClassifier.java:1076)
+	at edu.stanford.nlp.ie.crf.CRFClassifier.main(CRFClassifier.java:3076)
+Caused by: java.io.FileNotFoundException: /Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:503)
+	... 11 more
+Invoked on Tue May 08 20:37:17 JST 2018 with arguments: -prop /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/prop_files/austen25_1.prop
+useLastRealWord=true
+useClassFeature=true
+useTypeSeqs2=true
+testFile=/Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt
+useNextRealWord=true
+wordShape=chris2useLC
+lowercaseNGrams=true
+useTypeySequences=true
+serializeTo=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_1.ser.gz
+useNGrams=true
+normalize=true
+useAbbr=true
+usePrev=true
+useLemmas=true
+useNext=true
+maxLeft=1
+trainFile=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_1.txt
+useOccurrencePatterns=true
+map=word=0,answer=1
+useWord=true
+useTypeSeqs=true
+Exception in thread "main" edu.stanford.nlp.io.RuntimeIOException: java.io.FileNotFoundException: /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_1.txt (No such file or directory)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:509)
+	at edu.stanford.nlp.io.IOUtils.readerFromFile(IOUtils.java:550)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.setNextObject(ReaderIteratorFactory.java:189)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.<init>(ReaderIteratorFactory.java:161)
+	at edu.stanford.nlp.objectbank.ResettableReaderIteratorFactory.iterator(ResettableReaderIteratorFactory.java:98)
+	at edu.stanford.nlp.objectbank.ObjectBank$OBIterator.<init>(ObjectBank.java:414)
+	at edu.stanford.nlp.objectbank.ObjectBank.iterator(ObjectBank.java:253)
+	at edu.stanford.nlp.sequences.ObjectBankWrapper.iterator(ObjectBankWrapper.java:45)
+	at edu.stanford.nlp.ie.crf.CRFClassifier.train(CRFClassifier.java:1585)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.train(AbstractSequenceClassifier.java:758)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.train(AbstractSequenceClassifier.java:746)
+	at edu.stanford.nlp.ie.crf.CRFClassifier.main(CRFClassifier.java:3034)
+Caused by: java.io.FileNotFoundException: /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_1.txt (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:503)
+	... 11 more
+Invoked on Tue May 08 20:55:27 JST 2018 with arguments: -prop /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/prop_files/austen25_0.prop
+useLastRealWord=true
+useClassFeature=true
+useTypeSeqs2=true
+testFile=/Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt
+useNextRealWord=true
+wordShape=chris2useLC
+lowercaseNGrams=true
+useTypeySequences=true
+serializeTo=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_0.ser.gz
+useNGrams=true
+normalize=true
+useAbbr=true
+usePrev=true
+useLemmas=true
+useNext=true
+maxLeft=1
+trainFile=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_0.txt
+useOccurrencePatterns=true
+map=word=0,answer=1
+useWord=true
+useTypeSeqs=true
+numFeatures = 59999
+Time to convert docs to feature indices: 2.0 seconds
+numClasses: 2 [0=O,1=DATA]
+numDocuments: 905
+numDatums: 39222
+numFeatures: 59999
+Time to convert docs to data/labels: 0.8 seconds
+numWeights: 124124
+QNMinimizer called on double function of 124124 variables, using M = 25.
+               An explanation of the output:
+Iter           The number of iterations
+evals          The number of function evaluations
+SCALING        <D> Diagonal scaling was used; <I> Scaled Identity
+LINESEARCH     [## M steplength]  Minpack linesearch
+                   1-Function value was too high
+                   2-Value ok, gradient positive, positive curvature
+                   3-Value ok, gradient negative, positive curvature
+                   4-Value ok, gradient negative, negative curvature
+               [.. B]  Backtracking
+VALUE          The current function value
+TIME           Total elapsed time
+|GNORM|        The current norm of the gradient
+{RELNORM}      The ratio of the current to initial gradient norms
+AVEIMPROVE     The average improvement / current value
+EVALSCORE      The last available eval score
+ 
+Iter ## evals ## <SCALING> [LINESEARCH] VALUE TIME |GNORM| {RELNORM} AVEIMPROVE EVALSCORE
+
+Iter 1 evals 1 <D> [11M 8.737E-5] 3.705E4 0.41s |3.776E3| {7.271E-2} 0.000E0 - 
+Iter 2 evals 4 <D> [3313132M 1.035E1] 2.561E4 0.85s |3.125E3| {6.017E-2} 2.232E-1 - 
+ line search failure: bracketed but no feasible found 
+Iter 3 evals 12 <D> [131M 7.177E-3] 2.511E4 1.02s |2.793E3| {5.377E-2} 1.584E-1 - 
+Iter 4 evals 16 <D> [1M 1.598E-1] 2.434E4 1.10s |1.934E3| {3.724E-2} 1.306E-1 - 
+Iter 5 evals 18 <D> [1M 4.992E-1] 2.355E4 1.20s |1.295E3| {2.494E-2} 1.147E-1 - 
+Iter 6 evals 20 <D> [M 1.000E0] 2.314E4 1.27s |1.021E3| {1.967E-2} 1.001E-1 - 
+Iter 7 evals 21 <D> [M 1.000E0] 2.286E4 1.33s |6.298E2| {1.213E-2} 8.869E-2 - 
+Iter 8 evals 22 <D> [M 1.000E0] 2.251E4 1.39s |5.866E2| {1.129E-2} 8.073E-2 - 
+Iter 9 evals 23 <D> [M 1.000E0] 2.187E4 1.45s |4.109E2| {7.911E-3} 7.710E-2 - 
+Iter 10 evals 24 <D> [M 1.000E0] 2.119E4 1.51s |3.594E2| {6.920E-3} 7.479E-2 - 
+Iter 11 evals 25 <D> [M 1.000E0] 2.018E4 1.57s |3.023E2| {5.821E-3} 2.691E-2 - 
+Iter 12 evals 26 <D> [M 1.000E0] 1.828E4 1.65s |3.341E3| {6.433E-2} 3.740E-2 - 
+Iter 13 evals 27 <D> [M 1.000E0] 1.563E4 1.71s |1.132E3| {2.180E-2} 5.572E-2 - 
+Iter 14 evals 28 <D> [M 1.000E0] 1.363E4 1.76s |2.777E2| {5.348E-3} 7.270E-2 - 
+Iter 15 evals 29 <D> [M 1.000E0] 1.242E4 1.84s |2.258E2| {4.347E-3} 8.629E-2 - 
+Iter 16 evals 30 <D> [M 1.000E0] 1.014E4 1.89s |1.166E3| {2.245E-2} 1.255E-1 - 
+Iter 17 evals 31 <D> [1M 3.498E-1] 9.289E3 1.96s |1.204E3| {2.319E-2} 1.423E-1 - 
+Iter 18 evals 33 <D> [M 1.000E0] 7.917E3 2.02s |1.999E2| {3.849E-3} 1.763E-1 - 
+Iter 19 evals 34 <D> [M 1.000E0] 7.010E3 2.06s |2.210E2| {4.255E-3} 2.024E-1 - 
+Iter 20 evals 35 <D> [M 1.000E0] 4.884E3 2.10s |2.914E2| {5.610E-3} 3.132E-1 - 
+Iter 21 evals 36 <D> [2M 3.388E-1] 4.237E3 2.17s |2.035E2| {3.917E-3} 3.314E-1 - 
+Iter 22 evals 38 <D> [131M 1.286E-1] 3.831E3 2.30s |1.832E2| {3.528E-3} 3.080E-1 - 
+Iter 23 evals 42 <D> [131M 7.859E-2] 3.517E3 2.44s |1.700E2| {3.273E-3} 2.876E-1 - 
+Iter 24 evals 46 <D> [131M 7.205E-2] 3.249E3 2.71s |1.605E2| {3.091E-3} 2.823E-1 - 
+Iter 25 evals 50 <D> [1M 2.634E-1] 2.803E3 2.82s |1.569E2| {3.022E-3} 2.617E-1 - 
+Iter 26 evals 52 <D> [M 1.000E0] 2.421E3 2.93s |2.401E2| {4.624E-3} 2.836E-1 - 
+Iter 27 evals 53 <D> [2M 2.508E-1] 2.328E3 3.10s |2.262E2| {4.355E-3} 2.400E-1 - 
+Iter 28 evals 55 <D> [131M 8.273E-2] 2.235E3 3.26s |2.570E2| {4.949E-3} 2.137E-1 - 
+Iter 29 evals 59 <D> [1M 1.081E-1] 2.174E3 3.33s |2.347E2| {4.518E-3} 1.246E-1 - 
+Iter 30 evals 61 <D> [M 1.000E0] 1.996E3 3.38s |3.328E2| {6.409E-3} 1.122E-1 - 
+Iter 31 evals 62 <D> [M 1.000E0] 1.740E3 3.41s |1.562E2| {3.008E-3} 1.201E-1 - 
+Iter 32 evals 63 <D> [M 1.000E0] 1.619E3 3.46s |1.929E2| {3.714E-3} 1.173E-1 - 
+Iter 33 evals 64 <D> [M 1.000E0] 1.452E3 3.50s |1.550E2| {2.985E-3} 1.238E-1 - 
+Iter 34 evals 65 <D> [M 1.000E0] 1.258E3 3.54s |1.909E2| {3.676E-3} 1.227E-1 - 
+Iter 35 evals 66 <D> [M 1.000E0] 1.067E3 3.58s |1.295E2| {2.493E-3} 1.269E-1 - 
+Iter 36 evals 67 <D> [1M 4.824E-1] 8.765E2 3.71s |1.627E2| {3.132E-3} 1.656E-1 - 
+Iter 37 evals 69 <D> [M 1.000E0] 8.012E2 3.76s |3.642E2| {7.012E-3} 1.789E-1 - 
+Iter 38 evals 70 <D> [M 1.000E0] 7.011E2 3.81s |9.733E1| {1.874E-3} 2.101E-1 - 
+Iter 39 evals 71 <D> [M 1.000E0] 6.450E2 3.87s |5.281E1| {1.017E-3} 2.095E-1 - 
+Iter 40 evals 72 <D> [M 1.000E0] 5.960E2 3.92s |1.246E2| {2.398E-3} 1.920E-1 - 
+Iter 41 evals 73 <D> [M 1.000E0] 5.532E2 3.98s |5.225E1| {1.006E-3} 1.926E-1 - 
+Iter 42 evals 74 <D> [M 1.000E0] 5.011E2 4.03s |4.051E1| {7.800E-4} 1.897E-1 - 
+Iter 43 evals 75 <D> [M 1.000E0] 4.403E2 4.09s |1.066E2| {2.052E-3} 1.858E-1 - 
+Iter 44 evals 76 <D> [M 1.000E0] 4.058E2 4.14s |6.696E1| {1.289E-3} 1.630E-1 - 
+Iter 45 evals 77 <D> [M 1.000E0] 3.803E2 4.20s |7.740E1| {1.490E-3} 1.305E-1 - 
+Iter 46 evals 78 <D> [M 1.000E0] 3.566E2 4.25s |3.353E1| {6.456E-4} 1.247E-1 - 
+Iter 47 evals 79 <D> [M 1.000E0] 3.398E2 4.31s |2.448E1| {4.713E-4} 1.063E-1 - 
+Iter 48 evals 80 <D> [M 1.000E0] 3.246E2 4.37s |2.474E1| {4.763E-4} 9.872E-2 - 
+Iter 49 evals 81 <D> [M 1.000E0] 3.187E2 4.44s |2.113E1| {4.069E-4} 8.701E-2 - 
+Iter 50 evals 82 <D> [M 1.000E0] 3.146E2 4.51s |1.750E1| {3.369E-4} 7.584E-2 - 
+Iter 51 evals 83 <D> [M 1.000E0] 3.115E2 4.57s |1.464E1| {2.818E-4} 6.087E-2 - 
+Iter 52 evals 84 <D> [M 1.000E0] 3.094E2 4.66s |1.250E1| {2.406E-4} 4.231E-2 - 
+Iter 53 evals 85 <D> [M 1.000E0] 3.080E2 4.73s |1.236E1| {2.380E-4} 3.172E-2 - 
+Iter 54 evals 86 <D> [1M 4.494E-1] 3.074E2 4.84s |1.288E1| {2.479E-4} 2.373E-2 - 
+Iter 55 evals 88 <D> [M 1.000E0] 3.067E2 4.89s |5.849E0| {1.126E-4} 1.629E-2 - 
+Iter 56 evals 89 <D> [M 1.000E0] 3.062E2 4.96s |4.022E0| {7.744E-5} 1.096E-2 - 
+Iter 57 evals 90 <D> [M 1.000E0] 3.057E2 5.03s |5.048E0| {9.719E-5} 6.154E-3 - 
+Iter 58 evals 91 <D> [M 1.000E0] 3.054E2 5.10s |4.394E0| {8.460E-5} 4.339E-3 - 
+Iter 59 evals 92 <D> [M 1.000E0] 3.053E2 5.16s |1.315E1| {2.532E-4} 3.036E-3 - 
+Iter 60 evals 93 <D> [M 1.000E0] 3.051E2 5.23s |1.015E1| {1.954E-4} 2.079E-3 - 
+Iter 61 evals 94 <D> [M 1.000E0] 3.049E2 5.33s |3.743E0| {7.207E-5} 1.466E-3 - 
+Iter 62 evals 95 <D> [M 1.000E0] 3.048E2 5.40s |2.398E0| {4.617E-5} 1.054E-3 - 
+Iter 63 evals 96 <D> [M 1.000E0] 3.047E2 5.46s |1.065E1| {2.050E-4} 8.843E-4 - 
+Iter 64 evals 97 <D> [M 1.000E0] 3.045E2 5.56s |2.574E0| {4.957E-5} 7.147E-4 - 
+Iter 65 evals 98 <D> [M 1.000E0] 3.044E2 5.68s |2.690E0| {5.180E-5} 6.067E-4 - 
+Iter 66 evals 99 <D> [M 1.000E0] 3.042E2 5.74s |9.555E0| {1.840E-4} 4.970E-4 - 
+Iter 67 evals 100 <D> [1M 3.334E-1] 3.042E2 5.84s |3.186E0| {6.135E-5} 4.135E-4 - 
+Iter 68 evals 102 <D> [M 1.000E0] 3.041E2 5.91s |2.094E0| {4.033E-5} 4.097E-4 - 
+Iter 69 evals 103 <D> [M 1.000E0] 3.040E2 5.97s |2.542E0| {4.895E-5} 3.644E-4 - 
+Iter 70 evals 104 <D> [M 1.000E0] 3.040E2 6.03s |2.613E0| {5.032E-5} 3.201E-4 - 
+Iter 71 evals 105 <D> [M 1.000E0] 3.039E2 6.09s |1.532E0| {2.950E-5} 3.039E-4 - 
+Iter 72 evals 106 <D> [M 1.000E0] 3.039E2 6.15s |2.681E0| {5.162E-5} 2.589E-4 - 
+Iter 73 evals 107 <D> [M 1.000E0] 3.038E2 6.21s |1.035E0| {1.992E-5} 2.167E-4 - 
+Iter 74 evals 108 <D> [M 1.000E0] 3.038E2 6.27s |1.426E0| {2.745E-5} 1.854E-4 - 
+Iter 75 evals 109 <D> [M 1.000E0] 3.038E2 6.35s |1.897E0| {3.653E-5} 1.423E-4 - 
+Iter 76 evals 110 <D> [1M 2.443E-1] 3.038E2 6.47s |1.003E0| {1.932E-5} 1.282E-4 - 
+Iter 77 evals 112 <D> [M 1.000E0] 3.038E2 6.53s |7.786E-1| {1.499E-5} 1.049E-4 - 
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Total time spent in optimization: 6.63s
+CRFClassifier training ... done [9.8 sec].
+Serializing classifier to /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_0.ser.gz...
+done.
+Exception in thread "main" edu.stanford.nlp.io.RuntimeIOException: java.io.FileNotFoundException: /Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt (No such file or directory)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:509)
+	at edu.stanford.nlp.io.IOUtils.readerFromFile(IOUtils.java:550)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.setNextObject(ReaderIteratorFactory.java:189)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.<init>(ReaderIteratorFactory.java:161)
+	at edu.stanford.nlp.objectbank.ResettableReaderIteratorFactory.iterator(ResettableReaderIteratorFactory.java:98)
+	at edu.stanford.nlp.objectbank.ObjectBank$OBIterator.<init>(ObjectBank.java:414)
+	at edu.stanford.nlp.objectbank.ObjectBank.iterator(ObjectBank.java:253)
+	at edu.stanford.nlp.sequences.ObjectBankWrapper.iterator(ObjectBankWrapper.java:45)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.classifyAndWriteAnswers(AbstractSequenceClassifier.java:1178)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.classifyAndWriteAnswers(AbstractSequenceClassifier.java:1122)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.classifyAndWriteAnswers(AbstractSequenceClassifier.java:1076)
+	at edu.stanford.nlp.ie.crf.CRFClassifier.main(CRFClassifier.java:3076)
+Caused by: java.io.FileNotFoundException: /Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:503)
+	... 11 more
+Invoked on Tue May 08 20:55:38 JST 2018 with arguments: -prop /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/prop_files/austen25_1.prop
+useLastRealWord=true
+useClassFeature=true
+useTypeSeqs2=true
+testFile=/Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt
+useNextRealWord=true
+wordShape=chris2useLC
+lowercaseNGrams=true
+useTypeySequences=true
+serializeTo=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_1.ser.gz
+useNGrams=true
+normalize=true
+useAbbr=true
+usePrev=true
+useLemmas=true
+useNext=true
+maxLeft=1
+trainFile=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_1.txt
+useOccurrencePatterns=true
+map=word=0,answer=1
+useWord=true
+useTypeSeqs=true
+Exception in thread "main" edu.stanford.nlp.io.RuntimeIOException: java.io.FileNotFoundException: /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_1.txt (No such file or directory)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:509)
+	at edu.stanford.nlp.io.IOUtils.readerFromFile(IOUtils.java:550)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.setNextObject(ReaderIteratorFactory.java:189)
+	at edu.stanford.nlp.objectbank.ReaderIteratorFactory$ReaderIterator.<init>(ReaderIteratorFactory.java:161)
+	at edu.stanford.nlp.objectbank.ResettableReaderIteratorFactory.iterator(ResettableReaderIteratorFactory.java:98)
+	at edu.stanford.nlp.objectbank.ObjectBank$OBIterator.<init>(ObjectBank.java:414)
+	at edu.stanford.nlp.objectbank.ObjectBank.iterator(ObjectBank.java:253)
+	at edu.stanford.nlp.sequences.ObjectBankWrapper.iterator(ObjectBankWrapper.java:45)
+	at edu.stanford.nlp.ie.crf.CRFClassifier.train(CRFClassifier.java:1585)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.train(AbstractSequenceClassifier.java:758)
+	at edu.stanford.nlp.ie.AbstractSequenceClassifier.train(AbstractSequenceClassifier.java:746)
+	at edu.stanford.nlp.ie.crf.CRFClassifier.main(CRFClassifier.java:3034)
+Caused by: java.io.FileNotFoundException: /Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_1.txt (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at edu.stanford.nlp.io.IOUtils.inputStreamFromFile(IOUtils.java:503)
+	... 11 more

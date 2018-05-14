@@ -97,12 +97,16 @@ Sentence approach for the first iteration
 
 # An example for 5 iterations:
 for i in range(0, 1):
-    extract_new_entities.ne_extraction(25, 'term_expansion', i, i + 1, 0, es)
+    # Extract all entities and write to post_processing_files/
+    # extract_new_entities.ne_extraction(25, 'term_expansion', i, i + 1, 0, es)
+
+    # # Filter out entities according to PMI 
     # filtering.PMI(25, 'term_expansion', i, 0)
-    # trainingdata_generation.extract(25, 'term_expansion', i, 0)
-    # expansion.term_expansion_dataset(25, 'term_expansion', i, 0)
-    # trainingdata_generation.generate_trainingTE(25, 'term_expansion', i, 0)
-    # ner_training.create_austenprop(25, 'term_expansion', 0)
-    # ner_training.train(25, 'term_expansion', 0)
+    
+    trainingdata_generation.extract(25, 'term_expansion', i, 0)
+    expansion.term_expansion_dataset(25, 'term_expansion', i, 0)
+    trainingdata_generation.generate_trainingTE(25, 'term_expansion', i, 0)
+    ner_training.create_austenprop(25, 'term_expansion', 0)
+    ner_training.train(25, 'term_expansion', 0)
 
 ########################################################

@@ -500,6 +500,10 @@ def Kb(numberOfSeeds, name, numberOfIteration, iteration):
 PMI filtering
 """
 
+# corpus_file_path = ROOTHPATH + '/evaluation_files/X_Seeds_' + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
+# pos_file_path = ROOTHPATH + "/evaluation_files/" + name + "_Iteration" + str(numberOfIteration) + "_POS_" + str(numberOfSeeds) + "_" + str(iteration) + ".txt"
+# ppf_file_path = ROOTHPATH + '/post_processing_files/' + name + '_Iteration' + str(numberOfIteration) + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
+
 
 def PMI(numberOfSeeds, name, numberOfIteration, iteration):
     # for iteration in range(0,10):

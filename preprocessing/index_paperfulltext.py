@@ -81,13 +81,13 @@ for booktitle in filter_conference:
 print(f'Creating actions for all publications')
 counter=0
 for index, pubs in enumerate(list_of_pubs):
-    print(f'Creating actions for conference {filter_conference[index]}')
+    print(f'Creating {len(pubs) actions for conference {filter_conference[index]}')
     actions = []
     counter = 0
     for cur in pubs:
         counter += 1
         if counter % 100 is 0: print(f'Created {counter}/{len(pubs)}')
-        print(cur['dblpkey'])
+        # print(cur['dblpkey'])
         # print('JOURNAL', cur['journal'])
 
         text = cur["content"]

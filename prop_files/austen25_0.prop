@@ -2,10 +2,10 @@
 
 
 
-trainFile=/Users/sepidehmesbah/PycharmProjects/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_0.txt
+trainFile=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/evaluation_files/term_expansion_text_iteration0_splitted25_0.txt
 testFile=/Users/sepidehmesbah/PycharmProjects/NERDetector/evaluation_filesMet/term_expansion_text_iteration0test_splitted25_1.txt
 
-serializeTo=/Users/sepidehmesbah/PycharmProjects/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_0.ser.gz
+serializeTo=/Users/daniel/Documents/TUDelftMasterThesis/coner_v2/TSE-NER/crf_trained_files/term_expansion_text_iteration0_splitted25_0.ser.gz
 
 
 

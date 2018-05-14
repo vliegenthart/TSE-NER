@@ -12,12 +12,9 @@ from config import ROOTHPATH
 # Testing the results of the trained NER model on the testfile
 def test(numberOfSeeds, name, numberOfIteration):
     for iteration in range(0, 2):
-        outputfile = open(ROOTHPATH + '/crf_trained_files/temp' + numberOfIteration + name + 'testB.txt', 'a')
-        command = 'java -cp ' + ROOTHPATH + '/stanford_files/stanford-ner.jar edu.stanford.nlp.ie.crf.CRFClassifier -loadClassifier ' + ROOTHPATH + '/crf_trained_files/' + name + '_text_iteration' + numberOfIteration + '_splitted' + str(
-            numberOfSeeds) + '_' + str(iteration) + '.ser.gz -testFile ' + ROOTHPATH + '/data/testB_dataset.txt'
-        p = subprocess.call(command,
-                            stdout=outputfile,
-                            stderr=subprocess.STDOUT, shell=True)
+        outputfile = open(ROOTHPATH + '/crf_trained_files/temp' + str(numberOfIteration) + name + 'testB.txt', 'a')
+        command = 'java -cp ' + ROOTHPATH + '/stanford_files/stanford-ner.jar edu.stanford.nlp.ie.crf.CRFClassifier -loadClassifier ' + ROOTHPATH + '/crf_trained_files/' + name + '_text_iteration' + str(numberOfIteration) + '_splitted' + str(numberOfSeeds) + '_' + str(iteration) + '.ser.gz -testFile ' + ROOTHPATH + '/data/testB_dataset.txt'
+        p = subprocess.call(command, stdout=outputfile, stderr=subprocess.STDOUT, shell=True)
         outputfile.close()
 
 
@@ -28,14 +25,11 @@ def test(numberOfSeeds, name, numberOfIteration):
 # Training the Stanfor NER model
 def train(numberOfSeeds, name, numberOfIteration):
     for iteration in range(0, 2):
-        outputfile = open(ROOTHPATH + '/crf_trained_files/temp' + numberOfIteration + name + 'testA.txt', 'a')
+        outputfile = open(ROOTHPATH + '/crf_trained_files/temp' + str(numberOfIteration) + name + 'testA.txt', 'a')
 
-        command = 'java -cp ' + ROOTHPATH + '/stanford_files/stanford-ner.jar edu.stanford.nlp.ie.crf.CRFClassifier -prop ' + ROOTHPATH + '/prop_files/austen' + str(
-            numberOfSeeds) + '_' + str(iteration) + '.prop'
+        command = 'java -cp ' + ROOTHPATH + '/stanford_files/stanford-ner.jar edu.stanford.nlp.ie.crf.CRFClassifier -prop ' + ROOTHPATH + '/prop_files/austen' + str(numberOfSeeds) + '_' + str(iteration) + '.prop'
 
-        p = subprocess.call(command,
-                            stdout=outputfile,
-                            stderr=subprocess.STDOUT, shell=True)
+        p = subprocess.call(command, stdout=outputfile, stderr=subprocess.STDOUT, shell=True)
 
 
 # Generating the property file  for training the Stanfor NER model
@@ -44,13 +38,10 @@ def create_austenprop(numberOfSeeds, name, numberOfIteration):
         outputfile = open(ROOTHPATH+'/data/austen.prop', 'r')
         text = outputfile.read()
         print(text)
-        modifiedpath = 'trainFile=' + ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + numberOfIteration + '_splitted' + str(
-            numberOfSeeds) + '_' + str(iteration) + '.txt'
+        modifiedpath = 'trainFile=' + ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + str(numberOfIteration) + '_splitted' + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
 
-        modifiedpathtest = 'testFile=' + ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + numberOfIteration + 'test_splitted' + str(
-            numberOfSeeds) + '_' + str(iteration) + '.txt'
-        serializeTo = 'serializeTo=' + ROOTHPATH + '/crf_trained_files/' + name + '_text_iteration' + numberOfIteration + '_splitted' + str(
-            numberOfSeeds) + '_' + str(iteration) + '.ser.gz'
+        modifiedpathtest = 'testFile=' + ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + str(numberOfIteration) + 'test_splitted' + str(numberOfSeeds) + '_' + str(iteration) + '.txt'
+        serializeTo = 'serializeTo=' + ROOTHPATH + '/crf_trained_files/' + name + '_text_iteration' + str(numberOfIteration) + '_splitted' + str(numberOfSeeds) + '_' + str(iteration) + '.ser.gz'
         edited = re.sub(r'trainFile.*?txt', modifiedpath, text, flags=re.DOTALL)
         edited = re.sub(r'#testFile.*?txt', modifiedpathtest, edited, flags=re.DOTALL)
         edited = re.sub(r'serializeTo.*?gz', serializeTo, edited, flags=re.DOTALL)

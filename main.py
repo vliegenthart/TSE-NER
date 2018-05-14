@@ -61,7 +61,7 @@ ner_training.train(25, 'term_expansion', str(0))
 ner_training.train(50, 'term_expansion', str(0))
 ner_training.train(100, 'term_expansion', str(0))
 
-# An example for 5 iterations:
+# An example for training NER 5 iterations:
 for i in range(0, 5):
     extract_new_entities.ne_extraction(100, 'term_expansion', i, i + 1, 0, es)
     filtering.PMI(100, 'term_expansion', i, 0)
@@ -75,7 +75,7 @@ for i in range(0, 5):
 
 
 """
-Sentence approach for the first iteration
+Sentence approach for the first itextreration
 """
 for number in range(0, 10):
     expansion.term_expansion_dataset(5, 'sentence_expansion', str(0), str(number))

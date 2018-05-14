@@ -37,7 +37,7 @@ def extract(numberOfSeeds):
             dsnames.append(row.strip())
 
     # 10 times randomly pick i number of seeds
-    for i in range(0, 10):
+    for i in range(0, 1):
         dsnames = [x.lower() for x in dsnames]
 
         dsnames = list(set(dsnames))
@@ -64,8 +64,7 @@ def extract(numberOfSeeds):
                 }
             }
 
-            res = es.search(index="twosent", doc_type="twosentnorules",
-                            body=query, size=10000)
+            res = es.search(index="twosent", doc_type="twosentnorules", body=query, size=10000)
 
             # clean up the sentences and if they dont contain the names of the testB then add them as the training data
             for doc in res['hits']['hits']:
@@ -100,8 +99,8 @@ def extract(numberOfSeeds):
         # print(paragraph)
 
         # Split the data into training and testing and keep the sentences and also the seed names for annotation that will be used later
-        X_traintext, X_testA = train_test_split(
-            paragraph, test_size=0.3, random_state=100)
+        X_traintext, X_testA = train_test_split(paragraph, test_size=0.3, random_state=100)
+        
         f1 = open(ROOTHPATH + '/evaluation_files/X_train_' + str(numberOfSeeds) + '_' + str(i) + '.txt', 'w')
         for item in paragraph:
             f1.write(item)

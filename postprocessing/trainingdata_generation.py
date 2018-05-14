@@ -163,7 +163,7 @@ def extract(numberOfSeeds, name, numberOfIteration, iteration):
             else:
                 sentences = tokenize.sent_tokenize(sentence)
                 if sentences[0] not in paragraph and sentences[0] not in testsentences:
-                    if sentences[1] not in paragraph and sentences[1] not in testsentences:
+                    if len(sentences) > 1 and sentences[1] not in paragraph and sentences[1] not in testsentences:
                         paragraph.append(sentence)
 
     paragraph = list(set(paragraph))
@@ -171,9 +171,7 @@ def extract(numberOfSeeds, name, numberOfIteration, iteration):
 
     sentences = re.sub(r"(\.)([A-Z])", r"\1 \2", paragraph)
 
-    text_file = open(
-        ROOTHPATH + '/evaluation_files/' + name + 'text_Iteration' + numberOfIteration + str(numberOfSeeds) + '_' + str(
-            iteration) + '.txt', 'w')
+    text_file = open(ROOTHPATH + '/evaluation_files/' + name + 'text_Iteration' + str(numberOfIteration) + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'w')
     text_file.write(sentences)
     text_file.close()
 
@@ -223,15 +221,9 @@ def generate_trainingTE(numberOfSeeds, name, numberOfIteration, iteration):
     print(numberOfIteration)
     print('/evaluation_files/X_train_' + str(numberOfSeeds) + '_' + str(iteration) + '.txt')
     if int(numberOfIteration) == 0:
-        fileUnlabelled = open(
-            ROOTHPATH + '/evaluation_files/X_train_' + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'r')
-
-
+        fileUnlabelled = open(ROOTHPATH + '/evaluation_files/X_train_' + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'r')
     else:
-        fileUnlabelled = open(
-            ROOTHPATH + '/evaluation_files/' + name + 'text_Iteration' + numberOfIteration + str(
-                numberOfSeeds) + '_' + str(
-                iteration) + '.txt')
+        fileUnlabelled = open(ROOTHPATH + '/evaluation_files/' + name + 'text_Iteration' + str(numberOfIteration) + str(numberOfSeeds) + '_' + str(iteration) + '.txt')
 
     text = fileUnlabelled.read()
     print(text)
@@ -346,16 +338,14 @@ def generate_trainingTE(numberOfSeeds, name, numberOfIteration, iteration):
                 label = 'O'
             inputs.append([word, label])
     print(inputs)
-    with open(ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + numberOfIteration + str(
-            numberOfSeeds) + '_' + str(iteration) + '.txt', 'w') as file1:
+    with open(ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + str(numberOfIteration) + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'w') as file1:
         for item in inputs:
             row = str(item[0]) + '\t' + str(item[1]) + "\n"
             file1.write(row)
 
-    file = open(ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + numberOfIteration + '_splitted' + str(
-        numberOfSeeds) + '_' + str(iteration) + '.txt', 'w')
-    with open(ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + numberOfIteration + str(
-            numberOfSeeds) + '_' + str(iteration) + '.txt', 'r') as tsvin:
+    file = open(ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + str(numberOfIteration) + '_splitted' + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'w')
+    
+    with open(ROOTHPATH + '/evaluation_files/' + name + '_text_iteration' + str(numberOfIteration) + str(numberOfSeeds) + '_' + str(iteration) + '.txt', 'r') as tsvin:
         tsvin = csv.reader(tsvin, delimiter='\t')
 
         for row in tsvin:

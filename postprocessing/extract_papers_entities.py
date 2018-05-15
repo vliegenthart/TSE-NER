@@ -20,19 +20,20 @@ import csv
 filterbywordnet = []
 model_names = ["DATA", "MET"]
 facets = { "DATA": 'dataset', "MET": 'method'}
-conference = "acl"
+conferences = ["acl", 'icwsm', 'vldb', 'www']
 iteration = 1
 test_papers = ['conf_acl_PapineniRWZ02']
 total_entities = {}
 facets_columns = ';'.join(facets)
 
 def main():
-    print(f'### Extracting entities for papers in conference: {conference} (iteration model {iteration}) ###')
+    print(f'### Extracting entities for papers in /data/top_full_text/ (iteration model {iteration}) ###')
 
-    for file_name in os.listdir(f'{ROOTHPATH}/data/{conference.lower()}/full_text/'):
+    for file_name in os.listdir(f'{ROOTHPATH}/data/top_full_text/'):
         if not file_name.endswith(".txt"): continue
 
         paper_id = file_name.strip(".txt")
+        conference = file_name.split("_")[1]
 
         entities = { "DATA": [], "MET": []}
         for model_name in model_names:
@@ -40,23 +41,23 @@ def main():
 
         total_entities[paper_id] = entities
 
-    conf_overview = read_overview_csv(conference)
+    for conference in conferences:
+        conf_overview = read_overview_csv(conference)
 
-    for paper in conf_overview:
-        if paper[0] in total_entities.keys():
-            paper[2] = f'{len(total_entities[paper[0]]["DATA"])};{len(total_entities[paper[0]]["MET"])}'
+        for paper in conf_overview:
+            if paper[0] in total_entities.keys():
+                paper[2] = f'{len(total_entities[paper[0]]["DATA"])};{len(total_entities[paper[0]]["MET"])}'
 
-    write_arrays_to_csv(conf_overview, conference, ['paper_id', 'has_pdf', facets_columns, 'number_citations', 'booktitle', 'pdf_url', 'year', 'title', 'type', 'authors'])
-
+        write_arrays_to_csv(conf_overview, conference, ['paper_id', 'has_pdf', facets_columns, 'number_citations', 'booktitle', 'pdf_url', 'year', 'title', 'type', 'authors'])
 
 def extract_entities(model_name, conference, paper_id, iteration):
     # print(f'Extracting "{model_name}" entities for paper: {paper_id} (iteration model {iteration})...')
 
     # change crf_trained_files to  crf_trained_filesMet if you want to extract method entities
     if model_name.upper() == "DATA":
-        path_to_model = ROOTHPATH + '/crf_trained_files/term_expansion_text_iteration0_splitted25_1.ser.gz'
+        path_to_model = ROOTHPATH + '/crf_trained_files/dataset_50_TSE_model_1.ser.gz'
     else:
-        path_to_model = f'{ROOTHPATH}/crf_trained_files/trained_ner_{model_name.upper()}.ser.gz'
+        path_to_model = ROOTHPATH + '/crf_trained_files/method_50_TSE_model_0.ser.gz'
 
     """
     use the trained Stanford NER model to extract entities from the publications
@@ -66,7 +67,7 @@ def extract_entities(model_name, conference, paper_id, iteration):
     newnames = []
     result = []
 
-    file_path = f'{ROOTHPATH}/data/{conference.lower()}/full_text/{paper_id}.txt'
+    file_path = f'{ROOTHPATH}/data/top_full_text/{paper_id}.txt'
     file1 = open(file_path, 'r')
     full_text = file1.read()
 
@@ -85,7 +86,10 @@ def extract_entities(model_name, conference, paper_id, iteration):
     tagged = nertagger.tag(sentence.split())
 
     for jj, (a, b) in enumerate(tagged):
-        tag = model_name.upper()        
+        if model_name.upper() == "DATA":
+            tag = "DATASET_50"
+        else:
+            tag = "METHOD_50"
 
         # change DATA to MET if you want to extract method entities
         if b == tag:

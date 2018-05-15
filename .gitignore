@@ -8,6 +8,7 @@ misc/
 evaluation_files/
 post_processing_files/
 data/
+crf_trained_files/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
